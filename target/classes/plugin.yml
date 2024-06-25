@@ -1,0 +1,10 @@
+name: RealScale
+version: '1.0-SNAPSHOT'
+main: org.nay.realscale.RealScale
+api-version: '1.21'
+
+commands:
+  scale:
+    description: Scale
+  scalereload:
+    description: Scale reload
