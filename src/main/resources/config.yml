@@ -1,6 +1,7 @@
 Messages:
   no-params: "&bInvalid arguments"
   invalid-measure: "&bInvalid measure"
+  no-scale-attribute: "&bYou dont have a scale attribute"
   scale-change: "&fTransforming &b%measure%cm &fto new scale for &b%player%&f: &b%scale%"
   exceeded-measure: "&bThat measurement is below the maximum or minimum"
   no-permission: "&cYou dont have permissions"
