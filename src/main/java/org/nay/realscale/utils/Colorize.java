@@ -18,7 +18,7 @@ public final class Colorize {
         }
         String result = input;
         for (int i = 0; i < replacements.length; i += 2) {
-            result = result.replace(replacements[i], replacements[i + 1]);
+            result = result.replace("%" + replacements[i] +  "%", replacements[i + 1]);
         }
         return ChatColor.translateAlternateColorCodes('&', result);
     }
