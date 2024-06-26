@@ -20,13 +20,12 @@ public class Scale implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
-        if (!(commandSender instanceof Player)) {
+        if (!(commandSender instanceof Player player)) {
             commandSender.sendMessage("Only players can use this command");
             return true;
         }
 
         FileConfiguration config = plugin.getConfig();
-        Player player = (Player) commandSender;
         if (!player.hasPermission("scale.scale")) {
             player.sendMessage(Colorize.Color(config.getString("Messages.no-permission")));
             return true;

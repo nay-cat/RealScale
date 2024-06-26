@@ -16,12 +16,10 @@ public class ScaleReload implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
-        if (!(commandSender instanceof Player)) {
+        if (!(commandSender instanceof Player player)) {
             commandSender.sendMessage("Only players can use this command");
             return true;
         }
-
-        Player player = (Player) commandSender;
 
         if (player.hasPermission("scale.reload")) {
             plugin.reloadConfig();
